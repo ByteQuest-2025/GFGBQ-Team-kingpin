@@ -56,7 +56,7 @@ const Login = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Ambulance Driver</h2>
           <p className="text-gray-500 mb-8">Report new incidents and receive optimized hospital routing.</p>
           <button 
-            onClick={() => navigate('/driver')}
+            onClick={() => navigate('/driver-auth')}
             className="w-full py-3 px-6 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-md transition-all active:scale-95"
           >
             Login as Driver
