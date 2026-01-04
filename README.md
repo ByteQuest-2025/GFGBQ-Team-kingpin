@@ -1,6 +1,6 @@
-# 🏥 PreCare – Predictive Hospital Resource & Emergency Load Intelligence
+# 🏥 MedLink Command – Predictive Hospital Resource & Emergency Load Intelligence
 
-**Project Name:** PreCare
+**Project Name:** MedLink Command
 **Team Name:** Kingpin  
 **Project Type:** AI-Driven Healthcare Operations Platform  
 
