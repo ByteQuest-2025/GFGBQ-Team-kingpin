@@ -1,122 +1,118 @@
-PreCare – Predictive Hospital Resource & Emergency Load Intelligence
-PreCare is an advanced AI-driven command center designed to transform hospital operations from reactive to proactive. By predicting patient influxes and resource needs before they happen, the system helps hospitals eliminate bed shortages and prevent staff burnout.
+# 🏥 PreCare – Predictive Hospital Resource & Emergency Load Intelligence
+
+**Team Name:** Team Victory  
+**Project Type:** AI-Driven Healthcare Operations Platform  
 
 ---
 
-🎯 Core Objective
-A proactive healthcare management platform that uses AI to forecast emergency surges, optimize medicine procurement, and provide real-time video coordination between ambulances and specialists.
+## 🚨 Problem Statement
+Hospitals currently operate in a **reactive mode**, which leads to:
+
+- ICU bed shortages during sudden patient surges  
+- Medical supply stockouts in emergencies  
+- Extreme staff burnout during seasonal outbreaks and disasters  
+
+There is a critical lack of **real-time coordination and predictive intelligence** that would allow hospitals to prepare *before* a crisis arrives.
+
 ---
-***✨ Key Features***
-🧠 AI Forecasting Engine
-Predictive Analytics: Uses a Dual-Random Forest model to forecast specific disease outbreaks (e.g., Dengue, Influenza) and expected patient counts for any date.
 
-Environmental Context: Analyzes seasonal date markers and environmental factors like Temperature, Humidity, Rainfall, and AQI to determine medical risks.
+## 💡 Project Overview
+**PreCare** is an advanced **AI-powered hospital command center** that transforms hospital operations from **reactive to proactive**.
 
-Historical Benchmarking: Visualizes 3-year historical trends to compare current predictions with past data.
+By predicting disease outbreaks, patient influx, and medical resource demand in advance, PreCare enables hospitals to:
+- Prevent ICU and ward overcrowding  
+- Optimize annual medicine procurement  
+- Reduce emergency response delays  
+- Protect healthcare workers from burnout  
 
-📅 Strategic Yearly Analysis
-12-Month Forecast: Provides a full annual patient load visualization using interactive Bar Charts.
+---
 
-Disease Distribution: A Pie Chart breakdown showing which diseases will consume the most resources annually.
+## ✨ Key Features
 
-Smart Procurement: Automatically generates an annual medicine requirement list with automated priority flagging (HIGH/LOW) based on predicted unit quantity.
+### 🧠 AI Forecasting Engine
+- **Predictive Analytics:**  
+  Utilizes a **Dual Random Forest model** to forecast:
+  - Disease outbreaks (e.g., Dengue, Influenza)  
+  - Expected patient counts for any selected date  
 
-🚨 Emergency Command Feed
-Live Ambulance Tracking: Real-time display of incoming patient data, including age, gender, medical condition (Critical/Mild), and ETA.
+- **Environmental Context Analysis:**  
+  Uses real-world environmental parameters:
+  - Temperature  
+  - Humidity  
+  - Rainfall  
+  - Air Quality Index (AQI)  
 
-Specialist Matching: Instantly identifies the specific doctor specialization needed (e.g., Neurosurgeon for head trauma) before the patient arrives.
+- **Historical Benchmarking:**  
+  Displays **3-year historical disease trends** to compare current predictions against past data.
 
-📹 Integrated Emergency Video Call
-Pre-Hospital Care: Enables a direct OpenCV-powered live video link between the ambulance and hospital specialists.
+---
 
-Zero-Delay Consultation: Allows doctors to visualize the patient's condition in real-time to provide immediate guidance to paramedics while the patient is in transit.
+### 📅 Strategic Yearly Analysis
+- **12-Month Patient Load Forecast:**  
+  Interactive **Bar Charts** visualize projected patient volume for each month.
 
-🏗️ Tech Stack
-Frontend
-Framework: React.js
+- **Disease Distribution Analysis:**  
+  **Pie Charts** highlight which diseases will consume the most hospital resources annually.
 
-Styling: CSS3 (Custom Glassmorphism & Responsive Design)
+- **Smart Procurement Engine:**  
+  Automatically generates an **annual medicine requirement table** and flags items as:
+  - 🔴 HIGH priority  
+  - 🟢 LOW priority  
+  based on predicted consumption volume.
 
-Charts: Recharts (Line, Bar, and Pie Charts)
+---
 
-API Client: Axios
+### 🚑 Emergency Command Feed
+- **Live Ambulance Tracking:**  
+  Displays incoming emergency cases in real time, including:
+  - Patient age and gender  
+  - Medical severity (Critical / Mild)  
+  - Estimated Time of Arrival (ETA)  
 
-Backend
-Framework: Flask (Python)
+- **Specialist Matching System:**  
+  Instantly identifies the required doctor specialization  
+  *(e.g., Neurosurgeon for head trauma)* before patient arrival.
 
-AI Engine: Scikit-Learn (Random Forest Regressor & Classifier)
+---
 
-Video System: OpenCV + Socket Programming
+### 📹 Integrated Emergency Video Consultation
+- **Pre-Hospital Care Support:**  
+  OpenCV-powered live video communication between ambulance paramedics and hospital specialists.
 
-Key Technologies
-Model Storage: Pickle for AI serialization
+- **Zero-Delay Decision Making:**  
+  Doctors can visually assess patients in transit and provide immediate guidance to paramedics.
 
-Subprocessing: Python subprocess for launching parallel video feeds
+---
 
-🚀 Quick Start
-Prerequisites
-Node.js and npm
+## 🏗️ Tech Stack
 
-Python 3.9+
+### Frontend
+- **Framework:** React.js  
+- **Styling:** CSS3 (Custom Glassmorphism + Fully Responsive Design)  
+- **Charts:** Recharts (Line, Bar, Pie)  
+- **API Client:** Axios  
 
-OpenCV and Flask dependencies
+### Backend
+- **Framework:** Flask (Python)  
+- **AI Models:** Scikit-Learn (Random Forest Regressor & Classifier)  
+- **Video System:** OpenCV + Socket Programming  
 
-Installation
-1. Setup Backend
-Bash
+### Core Technologies
+- **Model Serialization:** Pickle  
+- **Parallel Processing:** Python subprocess  
 
+---
+
+## ⚙️ Setup & Installation
+
+### Prerequisites
+- Node.js & npm  
+- Python 3.9+  
+- OpenCV and Flask dependencies  
+
+---
+
+### 🔧 Backend Setup
+```bash
 cd Model
 pip install flask flask-cors pandas numpy scikit-learn opencv-python
-2. Setup Frontend
-Bash
-
-cd hospital-dashboard
-npm install axios recharts
-Running the Application
-Terminal 1: Start Flask Backend
-Bash
-
-cd Model
-python server.py
-Backend runs on http://localhost:5000
-
-Terminal 2: Start React Frontend
-Bash
-
-cd hospital-dashboard
-npm start
-Frontend runs on http://localhost:3000
-
-🎬 Demo Flow for Judges
-1. Live Emergency Feed
-See simulated ambulance alerts arriving in real-time.
-
-Click "📹 Live Video": Instantly launch the OpenCV window to consult with paramedics.
-
-2. AI Prediction Engine
-Select a future date (e.g., during Monsoon season).
-
-Observe the AI predict specific risks and suggest necessary medicine restocks.
-
-3. Yearly Strategic Planning
-Generate the Annual Report.
-
-Show the 12-month patient load and the automated medicine priority table where high-volume items are flagged in Red.
-
-📊 Impact & Innovation
-From Reactive to Proactive: Shifts hospital operations from reacting to crises to preparing for them weeks in advance.
-
-Inventory Optimization: Reducing waste and preventing shortages by predicting medicine requirements based on local health trends.
-
-Critical Time Savings: The video call system and specialist matching ensure the right team and equipment are ready the moment the ambulance doors open.
-
-🏆 Built With ❤️ for the Hackathon
-Team Victory
-
-AI/ML Integration: Predictive modeling and data science.
-
-Full-Stack Development: React dashboard and Flask API.
-
-Communication Systems: Real-time video streaming logic.
-
-Remember: Predictive analytics in healthcare saves lives by ensuring the right resources are in the right place at the right time.
