@@ -6,7 +6,7 @@ PreCare is an advanced AI-driven command center designed to transform hospital o
 🎯 Core Objective
 A proactive healthcare management platform that uses AI to forecast emergency surges, optimize medicine procurement, and provide real-time video coordination between ambulances and specialists.
 ---
-✨ Key Features
+***✨ Key Features***
 🧠 AI Forecasting Engine
 Predictive Analytics: Uses a Dual-Random Forest model to forecast specific disease outbreaks (e.g., Dengue, Influenza) and expected patient counts for any date.
 
