@@ -8,7 +8,7 @@
 **Demo Video Link:**
 
 **PPT Link:**
-
+https://docs.google.com/presentation/d/1VXjkPHfQSFknkU9-Eiqx7vv4EXkB5Jzw/edit?usp=sharing&ouid=108680762471588122948&rtpof=true&sd=true
 ---
 
 ## 🚨 Problem Statement
