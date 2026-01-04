@@ -1,7 +1,13 @@
 # 🏥 PreCare – Predictive Hospital Resource & Emergency Load Intelligence
 
-**Team Name:** Team Victory  
+**Project Name:** PreCare
+**Team Name:** Kingpin  
 **Project Type:** AI-Driven Healthcare Operations Platform  
+
+---
+**Demo Video Link:**
+
+**PPT Link:**
 
 ---
 
@@ -112,7 +118,13 @@ By predicting disease outbreaks, patient influx, and medical resource demand in 
 
 ---
 
-### 🔧 Backend Setup
+## 🎨 Frontend Setup (Windows Terminal)
+
+Open **Windows Terminal / Command Prompt / PowerShell** and navigate to the frontend directory:
+
 ```bash
-cd Model
-pip install flask flask-cors pandas numpy scikit-learn opencv-python
+cd hospital-dashboard
+npm install axios recharts
+
+cd hospital-dashboard
+npm start
